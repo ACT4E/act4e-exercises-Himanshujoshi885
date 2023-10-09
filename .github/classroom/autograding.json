@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "All exercises",
+      "setup": "",
+      "run": "docker run -t --rm -v ${PWD}:${PWD} -w ${PWD} python:3.10 bash -c \"pip -q install -U pip; pip -q install -e .; pip -q install -U ACT4E-exercises; act4e-test --collections act4e_checks --module act4e_solutions\"",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
